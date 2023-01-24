@@ -39,8 +39,8 @@ export const SobreMim = () => {
           color={Colors.gray3}
           variant="body1"
         >
-          Meu nome é Millena tenho 25 anos sou formada em Sistemas De
-          Informação. Tenho experiencias são em React, React Native, Angular,
+          Meu nome é Millena Lameri sou formada em Sistemas De
+          Informação. Tenho experiencias nas tecnologias como React, React Native, Angular,
           JavaScript, TypeScript, Styled Components, Material UI e consumo de
           APIs REST. Sou apaixonada por tecnologia e sempre busco aprender mais.
           tenho experiência em projetos gerenciados por Metodologias Ágeis.

@@ -3,9 +3,8 @@ import Color from "color";
 const generateColorsRange = (color: string, factor = 0.25) => [
   color,
   Color(color).lighten(factor).hex(),
-  Color(color).darken(factor).hex()
+  Color(color).darken(factor).hex(),
 ];
-
 
 export const Colors = {
   gray1: "#333333",
@@ -17,6 +16,7 @@ export const Colors = {
   gray7: "#fafafa",
   gray8: "#fefefe",
   white: "#ffffff",
+  black: "#000000",
 
   divisor: "#f2f2f2",
 } as const;

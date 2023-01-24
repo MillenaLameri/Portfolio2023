@@ -13,7 +13,6 @@ import { Colors } from "../util/colors";
 import { Link } from "react-scroll";
 import { Contatos } from "./Contatos";
 import { Habilidades } from "./Habilidades";
-import { Controller, Scene } from "react-scrollmagic";
 
 export const TelaPrincipal = () => {
   const [{ xy }, set] = useSpring(() => ({ st: 0, xy: [0, 0] }));
@@ -30,6 +29,7 @@ export const TelaPrincipal = () => {
     (e: any) => set({ st: e.target.scrollTop / 30 }),
     [set]
   );
+
   return (
     <>
       <ResponsiveAppBar />
@@ -92,12 +92,7 @@ export const TelaPrincipal = () => {
           <Icon size={1.4} path={mdiChevronDown} color={Colors.gray3} />
         </Link>
       </Box>
-
-      <Controller>
-        <Scene triggerHook="onLeave" duration={1000} pin>
-          <SobreMim />
-        </Scene>
-      </Controller>
+      <SobreMim />
       <Habilidades />
       <Contatos />
     </>

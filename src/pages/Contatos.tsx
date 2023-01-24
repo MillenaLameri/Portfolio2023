@@ -1,8 +1,9 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
 import { Icon } from "@mdi/react";
-import { mdiInstagram, mdiFacebook, mdiEmail } from "@mdi/js";
+import { mdiLinkedin, mdiGithub, mdiEmail } from "@mdi/js";
 import { Colors } from "../util/colors";
+import { Mailto } from "./OpenEmail";
 
 export const Contatos = () => {
   return (
@@ -34,13 +35,32 @@ export const Contatos = () => {
         justifyContent={"center"}
       >
         <Box mr={6}>
-          <Icon size={5} path={mdiInstagram} color={Colors.gray3} />
+          <a
+            href="https://www.linkedin.com/in/millena-lameri-48b737187/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Icon size={5} path={mdiLinkedin} color={Colors.gray3} />
+          </a>
         </Box>
         <Box mr={6}>
-          <Icon size={5} path={mdiFacebook} color={Colors.gray3} />
+          <a
+            href="https://github.com/MillenaLameri"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Icon size={5} path={mdiGithub} color={Colors.gray3} />
+          </a>
         </Box>
         <Box>
-          <Icon size={5} path={mdiEmail} color={Colors.gray3} />
+          <Mailto
+            email="millenalameri@hotmail.com"
+            subject="Olá, mia"
+            body="(:"
+          >
+            <Icon size={5} path={mdiEmail} color={Colors.gray3} />
+          </Mailto>
+          ,
         </Box>
       </Box>
     </Box>

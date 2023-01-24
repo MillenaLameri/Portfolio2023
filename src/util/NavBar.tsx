@@ -6,9 +6,10 @@ import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import { Icon } from "@mdi/react";
-import { mdiInstagram, mdiFacebook } from "@mdi/js";
+import { mdiGithub, mdiLinkedin } from "@mdi/js";
 import { Colors } from "./colors";
 import { Link } from "react-scroll";
+
 
 function ResponsiveAppBar() {
   return (
@@ -64,14 +65,27 @@ function ResponsiveAppBar() {
           </Box>
 
           <Box mr={2}>
-            <Icon size={1.4} path={mdiInstagram} color={Colors.gray3} />
+            <a
+              href="https://www.linkedin.com/in/millena-lameri-48b737187/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Icon size={2} path={mdiLinkedin} color={Colors.gray3} />
+            </a>
           </Box>
           <Box>
-            <Icon size={1.4} path={mdiFacebook} color={Colors.gray3} />
+            <a
+              href="https://github.com/MillenaLameri"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Icon size={2} path={mdiGithub} color={Colors.gray3} />
+            </a>
           </Box>
         </Toolbar>
       </Container>
     </AppBar>
   );
 }
+
 export default ResponsiveAppBar;
