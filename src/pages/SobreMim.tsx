@@ -11,7 +11,7 @@ export const SobreMim = () => {
       alignContent="center"
     >
       <Typography
-        mb={3}
+        mt={2}
         sx={{
           fontFamily: "DM Sans",
           fontWeight: 700,
@@ -24,6 +24,7 @@ export const SobreMim = () => {
         Sobre mim
       </Typography>
       <Box
+        p={2}
         display="flex"
         textAlign="center"
         justifyContent="center"

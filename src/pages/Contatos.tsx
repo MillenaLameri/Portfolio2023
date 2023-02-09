@@ -33,27 +33,27 @@ export const Contatos = () => {
         Contatos
       </Typography>
       <Box display="flex" textAlign={"center"} justifyContent={"center"}>
-        <Box mr={6}>
+        <Box mr={2}>
           <a
             href="https://www.linkedin.com/in/millena-lameri-48b737187/"
             target="_blank"
             rel="noreferrer"
           >
             <Icon
-              size={5}
+              size={3}
               path={mdiLinkedin}
               color={theme === "dark" ? Colors.white : Colors.black}
             />
           </a>
         </Box>
-        <Box mr={6}>
+        <Box mr={2}>
           <a
             href="https://github.com/MillenaLameri"
             target="_blank"
             rel="noreferrer"
           >
             <Icon
-              size={5}
+              size={3}
               path={mdiGithub}
               color={theme === "dark" ? Colors.white : Colors.black}
             />
@@ -66,7 +66,7 @@ export const Contatos = () => {
             body="(:"
           >
             <Icon
-              size={5}
+              size={3}
               path={mdiEmail}
               color={theme === "dark" ? Colors.white : Colors.black}
             />

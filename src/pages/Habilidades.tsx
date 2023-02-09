@@ -45,21 +45,21 @@ export const Habilidades = () => {
         >
           <Box ml={1}>
             <Icon
-              size={5}
+              size={4}
               path={mdiReact}
               color={theme === "dark" ? Colors.white : Colors.black}
             />
           </Box>
           <Box ml={4}>
             <Icon
-              size={5}
+              size={4}
               path={mdiAngularjs}
               color={theme === "dark" ? Colors.white : Colors.black}
             />
           </Box>
           <Box ml={4}>
             <Icon
-              size={5}
+              size={4}
               path={mdiLanguageTypescript}
               color={theme === "dark" ? Colors.white : Colors.black}
             />
@@ -74,13 +74,13 @@ export const Habilidades = () => {
           alignContent="center"
         >
           <Icon
-            size={5}
+            size={4}
             path={mdiLanguageJavascript}
             color={theme === "dark" ? Colors.white : Colors.black}
           />
           <Box ml={4}>
             <Icon
-              size={5}
+              size={4}
               path={mdiMaterialUi}
               color={theme === "dark" ? Colors.white : Colors.black}
             />

@@ -42,18 +42,29 @@ export const TelaPrincipal = () => {
             >
               Prazer, mia!
             </Typography>
-            <Typing loop>
-              <Typing.Speed ms={70} />
-              <span>Desenvolvedora Front-end</span>
-              <Typing.Delay ms={1000} />
-              <Typing.Backspace count={40} />
-              <span>Desenvolvedora Web</span>
-              <Typing.Delay ms={1000} />
-              <Typing.Backspace count={40} />
-              <span>Desenvolvedora Mobile</span>
-              <Typing.Delay ms={1000} />
-              <Typing.Backspace count={40} />
-            </Typing>
+            <Box
+              sx={{
+                display: {
+                  xs: "none",
+                  sm: "none",
+                  md: "block",
+                  xl: "block",
+                },
+              }}
+            >
+              <Typing loop>
+                <Typing.Speed ms={70} />
+                <span>Desenvolvedora Front-end</span>
+                <Typing.Delay ms={1000} />
+                <Typing.Backspace count={40} />
+                <span>Desenvolvedora Web</span>
+                <Typing.Delay ms={1000} />
+                <Typing.Backspace count={40} />
+                <span>Desenvolvedora Mobile</span>
+                <Typing.Delay ms={1000} />
+                <Typing.Backspace count={40} />
+              </Typing>
+            </Box>
           </Box>
         </BoxCentralizado>
         <Grid
