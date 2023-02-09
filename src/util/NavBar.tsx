@@ -39,7 +39,7 @@ function ResponsiveAppBar() {
               textDecoration: "none",
             }}
           >
-            Portifólio
+            Portfólio
           </Typography>
           <Box
             sx={{
