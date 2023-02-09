@@ -9,8 +9,10 @@ export const Contatos = () => {
   return (
     <Box
       id="contatos"
-      textAlign={"center"}
-      justifyContent={"center"}
+      flexDirection="column"
+      textAlign="center"
+      justifyContent="center"
+      alignContent="center"
       mt={15}
       mb={10}
     >
@@ -21,26 +23,20 @@ export const Contatos = () => {
           fontWeight: 700,
           letterSpacing: ".2rem",
           color: "inherit",
-          textDecoration: "none",
         }}
         variant="h4"
         fontWeight="bold"
       >
         Contatos
       </Typography>
-      <Box
-        display="flex"
-        px={60}
-        textAlign={"center"}
-        justifyContent={"center"}
-      >
+      <Box display="flex" textAlign={"center"} justifyContent={"center"}>
         <Box mr={6}>
           <a
             href="https://www.linkedin.com/in/millena-lameri-48b737187/"
             target="_blank"
             rel="noreferrer"
           >
-            <Icon size={5} path={mdiLinkedin} color={Colors.gray3} />
+            <Icon size={5} path={mdiLinkedin} color={Colors.black} />
           </a>
         </Box>
         <Box mr={6}>
@@ -49,7 +45,7 @@ export const Contatos = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <Icon size={5} path={mdiGithub} color={Colors.gray3} />
+            <Icon size={5} path={mdiGithub} color={Colors.black} />
           </a>
         </Box>
         <Box>
@@ -58,7 +54,7 @@ export const Contatos = () => {
             subject="Olá, mia"
             body="(:"
           >
-            <Icon size={5} path={mdiEmail} color={Colors.gray3} />
+            <Icon size={5} path={mdiEmail} color={Colors.black} />
           </Mailto>
           ,
         </Box>

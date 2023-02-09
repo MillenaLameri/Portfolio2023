@@ -42,7 +42,6 @@ export const TelaPrincipal = () => {
                 fontWeight: 700,
                 letterSpacing: ".2rem",
                 color: "inherit",
-                textDecoration: "none",
               }}
               variant="h2"
               fontWeight="bold"
@@ -78,20 +77,11 @@ export const TelaPrincipal = () => {
             onMouseMove={onMove}
             onScroll={onScroll}
           >
-            <img src={Profile} width={600} height={600} alt="Large Pizza" />
+            <img src={Profile} width={600} height={600} alt="PerfilMia" />
           </a.div>
         </Grid>
       </Grid>
-      <Box
-        mr={2}
-        alignContent="center"
-        justifyContent="center"
-        textAlign={"center"}
-      >
-        <Link activeClass="active" smooth spy to="sobre">
-          <Icon size={1.4} path={mdiChevronDown} color={Colors.gray3} />
-        </Link>
-      </Box>
+
       <SobreMim />
       <Habilidades />
       <Contatos />

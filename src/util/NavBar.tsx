@@ -10,10 +10,9 @@ import { mdiGithub, mdiLinkedin } from "@mdi/js";
 import { Colors } from "./colors";
 import { Link } from "react-scroll";
 
-
 function ResponsiveAppBar() {
   return (
-    <AppBar position="static" sx={{ background: "#000000" }}>
+    <AppBar position="static" sx={{ background: Colors.black }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
