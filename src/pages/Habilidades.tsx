@@ -1,12 +1,19 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Box, Typography } from "@mui/material";
-import ReactIcon from "../assets/techs/React.png";
-import Angular from "../assets/techs/Angular.png";
-import Ts from "../assets/techs/Ts.png";
-import Js from "../assets/techs/Js.png";
-import Mui from "../assets/techs/Mui.png";
+import { Icon } from "@mdi/react";
+import {
+  mdiReact,
+  mdiAngularjs,
+  mdiLanguageTypescript,
+  mdiLanguageJavascript,
+  mdiMaterialUi,
+} from "@mdi/js";
+
+import { ThemeContext } from "../contexts/theme.context";
+import { Colors } from "../util/colors";
 
 export const Habilidades = () => {
+  const { theme, setTheme } = useContext(ThemeContext);
   return (
     <Box
       id="sobre"
@@ -37,13 +44,25 @@ export const Habilidades = () => {
           alignContent="center"
         >
           <Box ml={1}>
-            <img src={ReactIcon} width={100} height={90} alt="React" />
+            <Icon
+              size={5}
+              path={mdiReact}
+              color={theme === "dark" ? Colors.white : Colors.black}
+            />
           </Box>
           <Box ml={4}>
-            <img src={Angular} width={90} height={90} alt="Angular" />
+            <Icon
+              size={5}
+              path={mdiAngularjs}
+              color={theme === "dark" ? Colors.white : Colors.black}
+            />
           </Box>
           <Box ml={4}>
-            <img src={Ts} width={85} height={85} alt="TypeScript" />
+            <Icon
+              size={5}
+              path={mdiLanguageTypescript}
+              color={theme === "dark" ? Colors.white : Colors.black}
+            />
           </Box>
         </Box>
         <Box
@@ -54,11 +73,17 @@ export const Habilidades = () => {
           justifyContent="center"
           alignContent="center"
         >
-          <Box>
-            <img src={Js} width={100} height={100} alt="Javascript" />
-          </Box>
+          <Icon
+            size={5}
+            path={mdiLanguageJavascript}
+            color={theme === "dark" ? Colors.white : Colors.black}
+          />
           <Box ml={4}>
-            <img src={Mui} width={100} height={100} alt="MaterialUI" />
+            <Icon
+              size={5}
+              path={mdiMaterialUi}
+              color={theme === "dark" ? Colors.white : Colors.black}
+            />
           </Box>
         </Box>
       </Box>

@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { useContext } from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -9,8 +9,17 @@ import { Icon } from "@mdi/react";
 import { mdiGithub, mdiLinkedin } from "@mdi/js";
 import { Colors } from "./colors";
 import { Link } from "react-scroll";
+import { ThemeContext } from "../contexts/theme.context";
+import { DarkModeSwitch } from "react-toggle-dark-mode";
 
 function ResponsiveAppBar() {
+  const { theme, setTheme } = useContext(ThemeContext);
+
+  const handleThemeChange = () => {
+    const isCurrentDark = theme === "dark";
+    setTheme(isCurrentDark ? "light" : "dark");
+  };
+
   return (
     <AppBar position="static" sx={{ background: Colors.black }}>
       <Container maxWidth="xl">
@@ -69,7 +78,7 @@ function ResponsiveAppBar() {
               target="_blank"
               rel="noreferrer"
             >
-              <Icon size={2} path={mdiLinkedin} color={Colors.gray3} />
+              <Icon size={2} path={mdiLinkedin} color={Colors.white} />
             </a>
           </Box>
           <Box>
@@ -78,8 +87,17 @@ function ResponsiveAppBar() {
               target="_blank"
               rel="noreferrer"
             >
-              <Icon size={2} path={mdiGithub} color={Colors.gray3} />
+              <Icon size={2} path={mdiGithub} color={Colors.white} />
             </a>
+          </Box>
+
+          <Box ml={2}>
+            <DarkModeSwitch
+              checked={theme === "dark"}
+              sunColor={Colors.white}
+              onChange={handleThemeChange}
+              size={50}
+            />
           </Box>
         </Toolbar>
       </Container>

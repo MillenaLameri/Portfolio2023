@@ -1,28 +1,23 @@
 import React, { useCallback } from "react";
-import { Box, Fade, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid";
 import { useSpring, animated as a } from "react-spring";
 import Profile from "../assets/img/Profile.png";
 import { BoxCentralizado } from "../util/BoxCentralizado";
-import ResponsiveAppBar from "../util/NavBar";
 import { SobreMim } from "./SobreMim";
 import Typing from "react-typing-animation";
-import { Icon } from "@mdi/react";
-import { mdiChevronDown } from "@mdi/js";
-import { Colors } from "../util/colors";
-import { Link } from "react-scroll";
 import { Contatos } from "./Contatos";
 import { Habilidades } from "./Habilidades";
 
 export const TelaPrincipal = () => {
   const [{ xy }, set] = useSpring(() => ({ st: 0, xy: [0, 0] }));
   const interpBg = xy.to(
-    (x, y) => `perspective(600px) rotateY(${x / 60}deg) rotateX(${-y / 60}deg) `
+    (x, y) => `perspective(800px) rotateY(${x / 60}deg) rotateX(${-y / 60}deg) `
   );
 
   const onMove = useCallback(
     ({ clientX: x, clientY: y }: any) =>
-      set({ xy: [x - window.innerWidth / 2, y - window.innerHeight / 2] }),
+      set({ xy: [x - window.innerWidth / 4, y - window.innerHeight / 4] }),
     []
   );
   const onScroll = useCallback(
@@ -32,7 +27,6 @@ export const TelaPrincipal = () => {
 
   return (
     <>
-      <ResponsiveAppBar />
       <Grid container>
         <BoxCentralizado>
           <Box maxWidth="sm" sx={{ textAlign: "center" }}>

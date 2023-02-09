@@ -6,7 +6,6 @@ export const SobreMim = () => {
   return (
     <Box
       id="sobre"
-      flexDirection="column"
       textAlign="center"
       justifyContent="center"
       alignContent="center"
@@ -32,11 +31,10 @@ export const SobreMim = () => {
       >
         <Typography
           sx={{
-            maxWidth: "700px",
+            maxWidth: "600px",
             fontFamily: "monospace",
-            fontWeight: 400,
+            fontWeight: 500,
           }}
-          color={Colors.gray3}
           variant="body1"
         >
           Meu nome é Millena Lameri sou formada em Sistemas De Informação. Tenho

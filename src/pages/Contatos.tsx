@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Box, Typography } from "@mui/material";
 import { Icon } from "@mdi/react";
 import { mdiLinkedin, mdiGithub, mdiEmail } from "@mdi/js";
 import { Colors } from "../util/colors";
 import { Mailto } from "./OpenEmail";
+import { ThemeContext } from "../contexts/theme.context";
 
 export const Contatos = () => {
+  const { theme, setTheme } = useContext(ThemeContext);
+
   return (
     <Box
       id="contatos"
@@ -36,7 +39,11 @@ export const Contatos = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <Icon size={5} path={mdiLinkedin} color={Colors.black} />
+            <Icon
+              size={5}
+              path={mdiLinkedin}
+              color={theme === "dark" ? Colors.white : Colors.black}
+            />
           </a>
         </Box>
         <Box mr={6}>
@@ -45,7 +52,11 @@ export const Contatos = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <Icon size={5} path={mdiGithub} color={Colors.black} />
+            <Icon
+              size={5}
+              path={mdiGithub}
+              color={theme === "dark" ? Colors.white : Colors.black}
+            />
           </a>
         </Box>
         <Box>
@@ -54,9 +65,12 @@ export const Contatos = () => {
             subject="Olá, mia"
             body="(:"
           >
-            <Icon size={5} path={mdiEmail} color={Colors.black} />
+            <Icon
+              size={5}
+              path={mdiEmail}
+              color={theme === "dark" ? Colors.white : Colors.black}
+            />
           </Mailto>
-          ,
         </Box>
       </Box>
     </Box>

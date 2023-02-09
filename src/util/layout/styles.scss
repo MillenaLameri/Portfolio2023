@@ -1,0 +1,13 @@
+@import "../../contexts/theme-variables.scss";
+
+.layout-wrapper {
+  @include themify($themes) {
+    background: themed("bodyBackgroundColor");
+  }
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 78px);
+}
