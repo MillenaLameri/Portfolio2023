@@ -22,7 +22,7 @@ export const Contatos = () => {
       <Typography
         mb={5}
         sx={{
-          fontFamily: "monospace",
+          fontFamily: "DM Sans",
           fontWeight: 700,
           letterSpacing: ".2rem",
           color: "inherit",

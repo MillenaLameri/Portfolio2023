@@ -11,9 +11,9 @@ export const SobreMim = () => {
       alignContent="center"
     >
       <Typography
-        mb={5}
+        mb={3}
         sx={{
-          fontFamily: "monospace",
+          fontFamily: "DM Sans",
           fontWeight: 700,
           letterSpacing: ".2rem",
           color: "inherit",
@@ -31,9 +31,8 @@ export const SobreMim = () => {
       >
         <Typography
           sx={{
-            maxWidth: "600px",
-            fontFamily: "monospace",
-            fontWeight: 500,
+            maxWidth: "580px",
+            fontFamily: "DM Sans",
           }}
           variant="body1"
         >
