@@ -9,4 +9,4 @@ Esse projeto foi desenvolvido com :
 * React 
 * Material Ui
 * Typescript
-* Framer-motion
+
