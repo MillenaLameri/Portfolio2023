@@ -9,7 +9,7 @@ export const App = () => {
   const isBrowserDefaultDark = () =>
     window.matchMedia("(prefers-color-scheme: dark)").matches;
   const getDefaultTheme = (): string => {
-    const browserDefault = isBrowserDefaultDark() ? "light" : "dark";
+    const browserDefault = isBrowserDefaultDark() ? "dark" : "light";
     return browserDefault;
   };
   const [theme, setTheme] = useState(getDefaultTheme());

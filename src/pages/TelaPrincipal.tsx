@@ -27,10 +27,12 @@ export const TelaPrincipal = () => {
 
   return (
     <>
-      <Grid container>
+      <Grid container >
         <BoxCentralizado>
-          <Box maxWidth="sm" sx={{ textAlign: "center" }}>
+          <Box sx={{ textAlign: "center" }}>
             <Typography
+              mt={2}
+              mb={3}
               sx={{
                 fontFamily: "monospace",
                 fontWeight: 700,
@@ -67,6 +69,7 @@ export const TelaPrincipal = () => {
             </Box>
           </Box>
         </BoxCentralizado>
+
         <Grid
           sx={{
             display: {
