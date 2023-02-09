@@ -1,6 +1,5 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
-import { Colors } from "../util/colors";
 
 export const SobreMim = () => {
   return (

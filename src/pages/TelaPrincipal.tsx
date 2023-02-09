@@ -40,7 +40,7 @@ export const TelaPrincipal = () => {
               variant="h2"
               fontWeight="bold"
             >
-              Prazer, mia!
+              Prazer, Mia!
             </Typography>
             <Box
               sx={{
