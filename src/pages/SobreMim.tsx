@@ -11,6 +11,7 @@ export const SobreMim = () => {
     >
       <Typography
         mt={2}
+        mb={2}
         sx={{
           fontFamily: "DM Sans",
           fontWeight: 700,

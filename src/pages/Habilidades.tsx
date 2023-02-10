@@ -20,7 +20,7 @@ export const Habilidades = () => {
       flexDirection="column"
       textAlign="center"
       justifyContent="center"
-      mt={15}
+      mt={10}
     >
       <Typography
         mb={5}
